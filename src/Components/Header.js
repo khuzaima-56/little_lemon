@@ -1,8 +1,10 @@
+import React from "react";
+import { ReactComponent as Logo } from "../Assets/Logo.svg";
 
 function Header () {
     return (
-        <header>
-            Logo Here!
+        <header className='logo'>
+            <Logo />
         </header>
     );
 }

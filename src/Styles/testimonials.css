@@ -1,0 +1,67 @@
+/* Testimonails Styling Now */
+.testimonials {
+  background-color: #CECECE;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 1fr;
+  padding: 100px 150px;
+  grid-gap: 20px;
+}
+
+.testimonials > h1 {
+  grid-column: 1/span 4;
+  place-self: center;
+  font-family: 'Markazi Text';
+  font-weight: 500;
+  font-size: 36px;
+  color: #495E57;
+}
+
+.testimonial {
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 100px 20px 25px 20px;
+  grid-row-gap: 15px;
+  padding-bottom: 30px;
+}
+
+.comment {
+  grid-column: 1/span 3;
+  font-family: 'Karla';
+  font-weight: 400;
+  font-size: 18px;
+  color: #6E6F6E;
+}
+
+.h {
+  grid-column: 1/span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+}
+
+.h > div {
+  align-self: center;
+}
+
+.dp {
+  justify-self: center;
+}
+
+.name {
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 20px;
+  color: #333333;
+}
+
+.username {
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 5px;
+  color: #6E6F6E;
+}

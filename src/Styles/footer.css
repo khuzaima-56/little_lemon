@@ -1,0 +1,44 @@
+/* Footer Styling */
+footer {
+  background-color: #495E57;
+  grid-column: 1/ span 12;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-gap: 10px;
+}
+
+footer > div {
+align-self: center;
+justify-self: end;
+}
+
+.nav_links {
+  list-style-type: none;
+  align-self: center;
+  justify-self: center;
+  line-height: 30px;
+  font-family: 'Karla';
+  font-size: 20px;
+  color: white;
+}
+
+.contact {
+  font-family: 'Karla';
+  font-size: 20px;
+  line-height: 30px;
+  padding-right:100px ;
+  align-self: center;
+  justify-self: start;
+  color: white;
+}
+
+.copyrights {
+  font-family: 'Karla';
+  font-size: 18px;
+  line-height: 30px;
+  padding-right:70px ;
+  align-self: center;
+  justify-self: start;
+  color: white;
+}

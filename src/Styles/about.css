@@ -1,0 +1,51 @@
+/* About Section Styling */
+
+.about {
+  padding: 80px 100px 20px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.res_name {
+  font-family: 'Markazi Text';
+  font-weight: bold;
+  font-size: 48px;
+  color: #495E57;
+}
+
+.loc {
+  font-family: 'Markazi Text';
+  font-weight: bold; 
+  font-size: 28px;
+  color: #333333;
+  padding-bottom: 40px;
+}
+
+.about_desc {
+  font-family: 'Karla';
+  font-size: 20px;
+  text-align: justify;
+  color: #000000;
+}
+
+.text {
+  padding-bottom: 100px;
+}
+
+.images {
+  place-self: center;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+.im1 {
+  position: relative;
+  top:50px;
+  left:40px;
+}
+
+.im2 {
+position: relative;
+top:-50px;
+left:-40px;
+}

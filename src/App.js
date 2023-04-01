@@ -1,18 +1,24 @@
-import Header from './Components/Header'
-import Nav from './Components/Nav'
-import Main from './Components/Main'
-import Footer from './Components/Footer'
+import Header from "./Components/Header";
+import Nav from "./Components/Nav";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 
-import './App.css';
+import "./Styles/App.css";
+import "./Styles/header.css"
+import "./Styles/hero.css"
+import "./Styles/specials.css"
+import "./Styles/testimonials.css"
+import "./Styles/about.css"
+import "./Styles/footer.css"
 
 function App() {
   return (
-    <>
-    <Header />
-    <Nav />
-    <Main />
-    <Footer />
-    </>
+    <div className="container">
+      <Header />
+      <Nav />
+      <Main />
+      <Footer />
+    </div>
   );
 }
 

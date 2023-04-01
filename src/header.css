@@ -1,0 +1,25 @@
+.logo {
+  grid-column: 1 / span 3;
+}
+
+.navbar {
+  grid-column: 6 / span 7;
+}
+
+.navel {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
+  grid-gap: 10px;
+}
+
+ ul > li > a {
+  text-decoration: none;
+  font-family: "Karla";
+  font-style:normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
