@@ -20,11 +20,11 @@ function Footer () {
         </ul>
 
         <article className="contact">
-          <p className="address">
+          <div className="address">
             <p>123 Main St. </p>
             <p>Chicago, IL 60601 </p>
             <p>United States</p>
-          </p>
+          </div>
 
           <p className="cell">(312) 555-1234</p>
 
