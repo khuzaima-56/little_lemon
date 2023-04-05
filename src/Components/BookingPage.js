@@ -1,7 +1,15 @@
+import BookingForm from './BookingForm.js'
 
-
-const BookingPage = () => {
-    return <h1>This is Booking Page</h1>
+const BookingPage = ({ availableTimes, setAvailableTimes }) => {
+    console.log(availableTimes)
+    return (
+      <section>
+        <BookingForm
+          availableTimes={availableTimes}
+          setAvailableTimes={setAvailableTimes}
+        />
+      </section>
+    );
 }
 
 export default BookingPage

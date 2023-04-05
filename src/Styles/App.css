@@ -1,11 +1,13 @@
 * {
   margin:0px;
+  padding:0px;
+  box-sizing: border-box;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 100px 1fr 300px;
   place-items: center;
 }
 

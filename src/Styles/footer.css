@@ -2,7 +2,7 @@
 footer {
   background-color: #495E57;
   grid-column: 1/ span 12;
-  height: 350px;
+  height: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-gap: 10px;
