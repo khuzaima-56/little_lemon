@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 
-const BookingForm = ({ availableTimes, setAvailableTimes  }) => {
+const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
 
     const [date, setDate] = useState('')
     const [selectedTime, setSelectedTime] = useState("");
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        alert(`Table booked on ${date} at ${selectedTime}`);
-        setDate('')
-        setSelectedTime('')
-        setGuests(1)
-        setOccasion('')
-    }    
-
     const handleDateChange = (e) => {
-      setDate(e.target.value)
-      setAvailableTimes();
+      const newDate = e.target.value
+      setDate(newDate)
+      setAvailableTimes({ selectedDate: newDate });
     }
     
+    const handleSubmit = e => {
+      e.preventDefault();
+      onSubmit({
+        date,
+        selectedTime,
+        guests,
+        occasion,
+      });
+    }
+
     return (
       <>
         <h1>Book Now</h1>
@@ -39,7 +41,6 @@ const BookingForm = ({ availableTimes, setAvailableTimes  }) => {
 
             <select
               id="res-time"
-              disabled={!date}
               value={selectedTime}
               onChange={(e) => setSelectedTime(e.target.value)}>
               {availableTimes === undefined ? 'No time available' : availableTimes.map((time, index) => (
