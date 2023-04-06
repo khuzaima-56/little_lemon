@@ -34,15 +34,23 @@ function Main() {
   return (
     <main className="main">
       <Routes>
-        <Route path="/" element={<Homepage />}></Route>
+        <Route
+          path="/"
+          element={<Homepage />}
+          aria-label="Home Page Button"></Route>
 
         <Route
           path="/booking"
           element={
-            <BookingPage availableTimes={state} setAvailableTimes={dispatch}  onSubmit={submitForm}/>
-          }></Route>
+            <BookingPage
+              availableTimes={state}
+              setAvailableTimes={dispatch}
+              onSubmit={submitForm}
+            />
+          }
+          aria-label="Booking Page Button"></Route>
 
-        <Route path="booking-confirmed" element={<ConfirmedBooking />}></Route>
+        <Route path="booking-confirmed" element={<ConfirmedBooking />} ></Route>
       </Routes>
     </main>
   );
