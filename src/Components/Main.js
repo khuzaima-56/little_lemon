@@ -1,10 +1,13 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Homepage from "./Homepage";
 import BookingPage from "./BookingPage";
+import About from './About'
+import Specials from "./Specials";
 import ConfirmedBooking from "./ConfirmedBooking";
 import React, { useReducer } from "react";
 import { fetchdata } from "../api";
 import { submitAPI } from "../api";
+
 
 function Main() {
   const updateTimes = (state, action) => {
@@ -28,7 +31,7 @@ function Main() {
   const [state, dispatch] = useReducer(updateTimes, initializeTimes());
 
   const submitForm = (formdata) => {
-    submitAPI(formdata) && navigate('/booking-confirmed')
+    submitAPI(formdata) && navigate('/booking-confirmed', {state: formdata})
   };   
 
   return (
@@ -38,6 +41,16 @@ function Main() {
           path="/"
           element={<Homepage />}
           aria-label="Home Page Button"></Route>
+
+        <Route 
+          path="/about"
+          element = {<About />}
+          aria-label="About Page Button"></Route>
+
+        <Route 
+          path="/order"
+          element={<Specials />}
+          aria-label="Order Online Page"></Route>
 
         <Route
           path="/booking"

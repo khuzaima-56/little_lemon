@@ -3,23 +3,44 @@
 }
 
 .navbar {
-  grid-column: 6 / span 7;
+  grid-column: 7/ span 5;
 }
 
 .navel {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 4fr 1fr;
+  grid-template-rows: 100px;
   place-items: center;
-  grid-gap: 10px;
+  cursor: pointer;
 }
 
- ul > li > a {
+ .navel > li > a {
   text-decoration: none;
-  font-family: "Karla";
+  font-family: sans-serif;
   font-style:normal;
   font-weight: 700;
-  font-size: 18px;
-  color: black;
+  font-size: 0.9rem;
+  height: 100px;
+  color: #495e57;
+}
+
+.navel >li  {
+  padding-block: 40px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  transition: 0.5s;
+  
+}
+
+.navel > li >a {
+  padding-bottom: 2.5rem;
+  padding-top: 2.7rem;
+  padding-inline: 2.1rem;
+  /* background-color: red;  */
+}
+
+.navel > li > a:hover {
+  background-color: #f4ce14;;
 }

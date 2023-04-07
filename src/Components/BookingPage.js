@@ -1,9 +1,10 @@
 import BookingForm from './BookingForm.js'
+import '../Styles/BookingForm.css'
 
 const BookingPage = ({ availableTimes, setAvailableTimes, onSubmit }) => {
 
     return (
-      <section>
+      <section className='bookingPage'>
         <BookingForm
           availableTimes={availableTimes}
           setAvailableTimes={setAvailableTimes}

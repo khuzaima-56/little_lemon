@@ -28,6 +28,7 @@
 .card {
   background-color: #EDEFEE;
   border-radius: 16px;
+    overflow: hidden;
 }
 
 .cardImg {
@@ -35,6 +36,11 @@
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   outline: 1px solid black;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.cardImg:hover {
+  transform: scale(1.07);
 }
 
 .cardTitle {

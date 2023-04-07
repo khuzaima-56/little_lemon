@@ -1,0 +1,68 @@
+
+.bookingPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.bookingform {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 400px;
+    padding-inline: 1rem;
+    padding-block: 3rem;
+    margin-block: 1rem;
+    grid-row-gap: 2.3rem;
+}
+
+label {
+    color: #495e57;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+}
+
+input, select, option {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+    color: #495e57;
+    height: 2.5rem;
+    padding-inline: 1rem;
+    font-family: Karla, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 400;
+}
+
+fieldset {
+    border: 0px;
+}
+
+.submit {
+    background-color: #F4CE14;
+    border-radius:16px;
+    color: rgb(44, 42, 42);
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #e1bc02;
+}
+
+.tableHeading {
+    background-color: #495e57;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Markazi-Text;
+    font-weight: 500;
+    padding-block: 2.3rem;
+    font-size: 2rem;
+}
