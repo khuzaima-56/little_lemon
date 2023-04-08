@@ -43,22 +43,15 @@
   }
 
   .button {
-    width: 200px;
-    height: 60px;
-    border-radius: 16px;
-    padding: 0.5rem 1rem;
-    outline: none;
+    border-radius: 2rem;
+    padding: 0.8rem 1.5rem;
     border: none;
     background-color: #F4CE14;
     cursor: pointer;
-    text-decoration: none;
-    color: rgb(44, 42, 42);
+    color: #495E57;
     font-weight: 700;
-    font-style: normal; 
-    font-size: 18px;
+    font-size: 15px;
   }
-
-
 
   .button:hover {
     background-color: #e1bc02;

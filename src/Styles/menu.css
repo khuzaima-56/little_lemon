@@ -1,0 +1,15 @@
+
+
+.menuPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-top:1rem;
+    margin-bottom: 2rem;
+}
+
+.menu {
+    width: 35vw;
+    height: auto;
+    border-radius: 2rem;
+}

@@ -10,6 +10,7 @@ const Button = (props) => {
     const btnElement = btnRef.current;
     const handleClick = () => {
       if (btnElement.innerText === "Reserve a Table") navigate("/booking");
+      else if (btnElement.innerText === 'Online Menu') navigate('/menu')
     };
 
     if (btnElement) btnElement.addEventListener("click", handleClick);

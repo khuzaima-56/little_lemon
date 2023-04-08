@@ -9,13 +9,16 @@
 .navel {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 4fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px;
   place-items: center;
   cursor: pointer;
 }
 
- .navel > li > a {
+.nav-link {
+  padding-bottom: 2.5rem;
+  padding-top: 2.7rem;
+  padding-inline: 2.1rem;
   text-decoration: none;
   font-family: sans-serif;
   font-style:normal;
@@ -23,24 +26,14 @@
   font-size: 0.9rem;
   height: 100px;
   color: #495e57;
+  text-transform: uppercase ;
+  transition: 0.2s linear;
 }
 
-.navel >li  {
-  padding-block: 40px;
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
-  transition: 0.5s;
-  
-}
-
-.navel > li >a {
-  padding-bottom: 2.5rem;
-  padding-top: 2.7rem;
-  padding-inline: 2.1rem;
-  /* background-color: red;  */
+.active {
+  background-color: #f7ce00;
 }
 
 .navel > li > a:hover {
-  background-color: #f4ce14;;
+  background-color: #fbe05a;
 }

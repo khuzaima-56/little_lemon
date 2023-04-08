@@ -4,6 +4,7 @@ import BookingPage from "./BookingPage";
 import About from './About'
 import Specials from "./Specials";
 import Testimonials from './Testimonials'
+import Menu from "./Menu";
 import ConfirmedBooking from "./ConfirmedBooking";
 import React, { useReducer } from "react";
 import { fetchdata } from "../api";
@@ -57,6 +58,11 @@ function Main() {
           path="/order"
           element={<Specials />}
           aria-label="Order Online Page"></Route>
+
+        <Route
+          path='/menu'
+          element={<Menu />}
+          aria-label="Menu Page"></Route>
 
         <Route
           path="/booking"

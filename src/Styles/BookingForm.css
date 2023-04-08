@@ -45,16 +45,18 @@ fieldset {
 
 .submit {
     background-color: #F4CE14;
-    border-radius:16px;
-    color: rgb(44, 42, 42);
+    border-radius:2rem;
+    color: #495E57;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 15px;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .submit:hover {
-    background-color: #e1bc02;
+    background-color: #495E57;
+    color: white;
 }
 
 .tableHeading {
