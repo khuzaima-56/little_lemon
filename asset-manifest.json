@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/little_lemon/static/css/main.f6730d8d.css",
+    "main.js": "/little_lemon/static/js/main.4798d2fa.js",
+    "static/js/787.ec704a7a.chunk.js": "/little_lemon/static/js/787.ec704a7a.chunk.js",
+    "static/media/Menu2.svg": "/little_lemon/static/media/Menu2.2536accb0805848324ceaeede4e8048b.svg",
+    "static/media/restauranfood.jpg": "/little_lemon/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/Menu1.svg": "/little_lemon/static/media/Menu1.bc36deb467659e901de0c6171fc676b7.svg",
+    "static/media/resChefB.jpg": "/little_lemon/static/media/resChefB.1a24ef96dd83457a454b.jpg",
+    "static/media/salad.jpg": "/little_lemon/static/media/salad.f1ef1078c1ef4e322eb9.jpg",
+    "static/media/restaurant.jpg": "/little_lemon/static/media/restaurant.3c36eb094b0fca0337ea.jpg",
+    "static/media/bruchetta.jpg": "/little_lemon/static/media/bruchetta.a235bdd80232e507ff94.jpg",
+    "static/media/bike.png": "/little_lemon/static/media/bike.32fed55adb6339f7020b.png",
+    "static/media/footerlogo.png": "/little_lemon/static/media/footerlogo.d09eb2af6c5a2225eedf.png",
+    "static/media/Logo.svg": "/little_lemon/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "static/media/Dessert.jpg": "/little_lemon/static/media/Dessert.87000612beca4f4d9f6a.jpg",
+    "index.html": "/little_lemon/index.html",
+    "main.f6730d8d.css.map": "/little_lemon/static/css/main.f6730d8d.css.map",
+    "main.4798d2fa.js.map": "/little_lemon/static/js/main.4798d2fa.js.map",
+    "787.ec704a7a.chunk.js.map": "/little_lemon/static/js/787.ec704a7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6730d8d.css",
+    "static/js/main.4798d2fa.js"
+  ]
+}
