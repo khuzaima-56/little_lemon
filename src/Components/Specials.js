@@ -5,7 +5,6 @@ import BruchettaImg from "../Assets/bruchetta.jpg";
 import DessertImg from "../Assets/Dessert.jpg";
 
 const Specials = () => {
- 
 
   const Greek_Salad = {
     img: Salad ,

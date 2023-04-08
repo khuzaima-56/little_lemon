@@ -55,7 +55,7 @@ function Footer() {
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/">
+          <Link onClick={handleClick} to="/login">
             Login
           </Link>
         </li>

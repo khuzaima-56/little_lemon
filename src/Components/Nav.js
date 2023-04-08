@@ -58,7 +58,7 @@ function Nav() {
 
         <li>
           <Link
-            to="/"
+            to="/Login"
             className={activeLink === "login" ? "nav-link active" : "nav-link"}
             onClick={() => handleLinkClick("login")}>
             Login

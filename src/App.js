@@ -14,10 +14,11 @@ import "./Styles/footer.css"
 function App() {
   return (
     <div className="container">
-      <Header />
-      <Nav />
-      <Main />
-      <Footer />
+        <Header />
+        <Nav />
+        <Main />
+        <Footer />
+
     </div>
   );
 }

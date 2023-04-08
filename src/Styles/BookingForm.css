@@ -1,11 +1,11 @@
 
-.bookingPage {
+.bookingPage, .loginPage {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
 }
 
-.bookingform {
+.bookingform, .loginform {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 400px;
@@ -39,6 +39,10 @@ input, select, option {
     font-weight: 400;
 }
 
+input::placeholder {
+    opacity: 50%;
+}
+
 fieldset {
     border: 0px;
 }
@@ -59,7 +63,7 @@ fieldset {
     color: white;
 }
 
-.tableHeading {
+.tableHeading, .loginHeading {
     background-color: #495e57;
     width: 100%;
     text-align: center;

@@ -2,7 +2,9 @@ import Hero from './Hero'
 import Specials from './Specials'
 
 const Homepage = () => {
-    return (
+
+
+  return (
       <>
         <Hero />
         <Specials />

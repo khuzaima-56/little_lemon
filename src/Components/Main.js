@@ -5,6 +5,7 @@ import About from './About'
 import Specials from "./Specials";
 import Testimonials from './Testimonials'
 import Menu from "./Menu";
+import Login from './Login'
 import ConfirmedBooking from "./ConfirmedBooking";
 import React, { useReducer } from "react";
 import { fetchdata } from "../api";
@@ -14,12 +15,6 @@ import { submitAPI } from "../api";
 function Main() {
   const updateTimes = (state, action) => {
     const date = new Date(action.selectedDate);
-    const today = new Date();
-
-    if (date < today) {
-      return undefined;
-    }
-
     return fetchdata(date);
   };
 
@@ -33,7 +28,8 @@ function Main() {
   const [state, dispatch] = useReducer(updateTimes, initializeTimes());
 
   const submitForm = (formdata) => {
-    submitAPI(formdata) && navigate('/booking-confirmed', {state: formdata})
+    submitAPI(formdata) && navigate('/booking-confirmed', {state: formdata}) 
+    window.scrollTo(0, 0);
   };   
 
   return (
@@ -74,6 +70,8 @@ function Main() {
             />
           }
           aria-label="Booking Page Button"></Route>
+
+          <Route path='/login' element={<Login />} ></Route>
 
         <Route path="booking-confirmed" element={<ConfirmedBooking />}></Route>
       </Routes>

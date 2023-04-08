@@ -10,6 +10,8 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("");
 
+    const today = new Date().toISOString().slice(0, 10);
+
     const handleDateChange = (e) => {
       const newDate = e.target.value
       setDate(newDate)
@@ -38,6 +40,7 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
               name="res-date"
               value={date}
               onChange={handleDateChange}
+              min={today}
             />
           </fieldset>
 
@@ -78,7 +81,7 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
               value={occasion}
               onChange={(e) => setOccasion(e.target.value)}
               required>
-              <option value="">-- Select an occasion --</option>
+              <option value="">Select an occasion</option>
               <option value="Birthday">Birthday</option>
               <option value="Anniversary">Anniversary</option>
               <option value="Other">Other</option>
