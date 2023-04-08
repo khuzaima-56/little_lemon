@@ -12,7 +12,7 @@ const Specials = () => {
     title: "Greek Salad",
     price: "$12.99",
     description:
-      "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic.",
+      "The famous greek salad of crispy lettuce, peppers, olives and feta cheese, garnished with crunchy garlic.",
   };
 
   const Bruchetta = {
@@ -34,7 +34,7 @@ const Specials = () => {
   return (
     <section className="special">
       <h1 className="specialsHeading">This weeks specials!</h1>
-      <Button id="right" title="Online Menu" />
+      <Button cname="right" title="Online Menu" to=''/>
       <section className="cards">
         <Card data={Greek_Salad} />
         <Card data={Bruchetta} />

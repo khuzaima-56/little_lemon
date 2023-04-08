@@ -1,6 +1,6 @@
 import Dish from '../Assets/restauranfood.jpg'
 import Button from './Button.js'
-import About from './About';
+import BookingPage from './BookingPage';
 
 const Hero = () => {
     return (
@@ -13,7 +13,7 @@ const Hero = () => {
             itself on serving up traditional recipes with a touch of modern
             flair.
           </p>
-          <Button title='Reserve a Table' to='/about' element={<About />}/>
+          <Button title="Reserve a Table" to="/booking" element={<BookingPage />} />
         </div>
         <img className="dish" src={Dish} alt="dish" />
       </section>

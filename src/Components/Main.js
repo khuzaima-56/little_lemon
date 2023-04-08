@@ -3,6 +3,7 @@ import Homepage from "./Homepage";
 import BookingPage from "./BookingPage";
 import About from './About'
 import Specials from "./Specials";
+import Testimonials from './Testimonials'
 import ConfirmedBooking from "./ConfirmedBooking";
 import React, { useReducer } from "react";
 import { fetchdata } from "../api";
@@ -42,12 +43,17 @@ function Main() {
           element={<Homepage />}
           aria-label="Home Page Button"></Route>
 
-        <Route 
+        <Route
           path="/about"
-          element = {<About />}
+          element={
+            <>
+              {" "}
+              <Testimonials /> <About />
+            </>
+          }
           aria-label="About Page Button"></Route>
 
-        <Route 
+        <Route
           path="/order"
           element={<Specials />}
           aria-label="Order Online Page"></Route>
@@ -63,7 +69,7 @@ function Main() {
           }
           aria-label="Booking Page Button"></Route>
 
-        <Route path="booking-confirmed" element={<ConfirmedBooking />} ></Route>
+        <Route path="booking-confirmed" element={<ConfirmedBooking />}></Route>
       </Routes>
     </main>
   );

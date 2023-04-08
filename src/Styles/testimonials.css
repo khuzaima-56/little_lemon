@@ -1,6 +1,6 @@
 /* Testimonails Styling Now */
 .testimonials {
-  background-color: #CECECE;
+  background-color: #495E57;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 1fr;
@@ -14,7 +14,7 @@
   font-family: 'Markazi Text';
   font-weight: 500;
   font-size: 36px;
-  color: #495E57;
+  color: white;
 }
 
 .testimonial {

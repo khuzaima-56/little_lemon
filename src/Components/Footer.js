@@ -1,14 +1,14 @@
-import Image from '../Assets/chefs.jpg'
+import Logo from '../Assets/footerlogo.png'
 
 function Footer () {
     const style= {
-        width: '160px',
-        height: '280px'
+        width: '100px',
+        height: 'auto',
     }
     return (
       <footer>
         <div>
-          <img className="chefs_im" style={style} src={Image} alt="Our Chefs" />
+          <img className="chefs_im" style={style} src={Logo} alt='Logo' />
         </div>
         <ul className="nav_links">
           <li>Home</li>

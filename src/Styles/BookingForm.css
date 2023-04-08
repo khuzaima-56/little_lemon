@@ -48,6 +48,7 @@ fieldset {
     border-radius:16px;
     color: rgb(44, 42, 42);
     font-weight: 700;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
@@ -66,3 +67,5 @@ fieldset {
     padding-block: 2.3rem;
     font-size: 2rem;
 }
+
+

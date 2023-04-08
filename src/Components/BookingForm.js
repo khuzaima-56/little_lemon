@@ -28,7 +28,7 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
 
     return (
       <>
-        <h3 className="tableHeading">Reserve Table</h3>
+        <h3 className="tableHeading">Book & Dine!</h3>
         <form className="bookingform" onSubmit={handleSubmit}>
           <fieldset>
             <label htmlFor="res-date">Date</label>
@@ -47,7 +47,8 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
               id="res-time"
               name="res-time"
               value={selectedTime}
-              onChange={(e) => setSelectedTime(e.target.value)}>c 
+              onChange={(e) => setSelectedTime(e.target.value)}>
+              c
               {availableTimes === undefined
                 ? "No time available"
                 : availableTimes.map((time, index) => (
@@ -83,7 +84,11 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
               <option value="Other">Other</option>
             </select>
           </fieldset>
-          <input className='submit' type="submit" value="Make your reservation" />
+          <input
+            className="submit"
+            type="submit"
+            value="Make your reservation"
+          />
         </form>
       </>
     );
