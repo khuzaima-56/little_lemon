@@ -14,7 +14,7 @@ const Login = () => {
 const handleSubmit = (e) => {
     e.preventDefault();
     clearForm();
-    navigate('/'  )
+    navigate("/");
     window.scrollTo(0, 0);
 }
 
@@ -73,7 +73,7 @@ const handleSubmit = (e) => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </fieldset>
+       </fieldset>
 
         <fieldset>
           <label htmlFor="password">
@@ -104,7 +104,7 @@ const handleSubmit = (e) => {
             onChange={(e) => setPhone(e.target.value)}
             required></input>
         </fieldset>
-
+      
         <input className="submit" type="submit" value="Login" />
       </form>
     </section>

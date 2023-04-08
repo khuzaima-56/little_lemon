@@ -1,20 +1,14 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-function Nav() {
-  const [activeLink, setActiveLink] = useState("home");
-  
-  const handleLinkClick = (linkId) => {
-    setActiveLink(linkId);
-  }
+const Nav = ({ selectedPage, onPageChange }) => {
 
   return (
     <nav className="navbar">
       <ul className="navel">
         <li>
           <Link
-            className={activeLink === "home" ? "nav-link active" : "nav-link"}
-            onClick={() => handleLinkClick("home")}
+            className={selectedPage === "home" ? "nav-link active" : "nav-link"}
+            onClick={() => onPageChange("home")}
             to="/">
             Home
           </Link>
@@ -23,8 +17,10 @@ function Nav() {
         <li>
           <Link
             to="/about"
-            className={activeLink === "about" ? "nav-link active" : "nav-link"}
-            onClick={() => handleLinkClick("about")}>
+            className={
+              selectedPage === "about" ? "nav-link active" : "nav-link"
+            }
+            onClick={() => onPageChange("about")}>
             About
           </Link>
         </li>
@@ -32,8 +28,11 @@ function Nav() {
         <li>
           <Link
             to="/booking"
-            className={activeLink === "reserve" ? "nav-link active" : "nav-link"}
-            onClick={() => handleLinkClick("reserve")}>
+            className={
+              selectedPage === "booking" ? "nav-link active" : "nav-link"
+            }
+            onClick={() => onPageChange("booking")}
+            >
             Reservations
           </Link>
         </li>
@@ -41,8 +40,10 @@ function Nav() {
         <li>
           <Link
             to="/order"
-            className={activeLink === "order" ? "nav-link active" : "nav-link"}
-            onClick={() => handleLinkClick("order")}>
+            className={
+              selectedPage === "order" ? "nav-link active" : "nav-link"
+            }
+            onClick={() => onPageChange("order")}>
             Order
           </Link>
         </li>
@@ -50,17 +51,17 @@ function Nav() {
         <li>
           <Link
             to="/menu"
-            className={activeLink === "menu" ? "nav-link active" : "nav-link"}
-            onClick={() => handleLinkClick("menu")}>
+            className={selectedPage === "menu" ? "nav-link active" : "nav-link"}
+            onClick={() => onPageChange("menu")}>
             Menu
           </Link>
         </li>
 
         <li>
           <Link
-            to="/Login"
-            className={activeLink === "login" ? "nav-link active" : "nav-link"}
-            onClick={() => handleLinkClick("login")}>
+            to="/login"
+            className={selectedPage === "login" ? "nav-link active" : "nav-link"}
+            onClick={() => onPageChange("login")}>
             Login
           </Link>
         </li>

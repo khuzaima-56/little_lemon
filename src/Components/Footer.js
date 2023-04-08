@@ -9,17 +9,18 @@ import {
   FaInstagram,
   FaYoutube
 } from "react-icons/fa";
-function Footer() {
+const Footer = ({ selectedPage, onPageChange }) => {
   const style = {
     width: "100px",
     height: "auto",
   };
 
-  const handleClick = () => {
+  const handleClick = (page) => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+    onPageChange(page)
   };
 
   return (
@@ -30,32 +31,32 @@ function Footer() {
       <ul className="nav_links">
         <h4 className="sitemap">SITEMAP</h4>
         <li>
-          <Link onClick={handleClick} to="/">
+          <Link onClick={() => handleClick("home")} to="/">
             Home
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/about">
+          <Link onClick={() => handleClick("about")} to="/about">
             About
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/booking">
+          <Link onClick={() => handleClick("booking")} to="/booking">
             Reservations
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/menu">
-            Menu
-          </Link>
-        </li>
-        <li>
-          <Link onClick={handleClick} to="/order">
+          <Link onClick={() => handleClick("order")} to="/order">
             Order Online
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/login">
+          <Link onClick={() => handleClick("menu")} to="/menu">
+            Menu
+          </Link>
+        </li>
+        <li>
+          <Link onClick={() => handleClick("login")} to="/login">
             Login
           </Link>
         </li>
@@ -98,6 +99,6 @@ function Footer() {
       </article>
     </footer>
   );
-}
+};
 
 export default Footer;
