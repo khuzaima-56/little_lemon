@@ -76,13 +76,15 @@
 }
 
 .order {
-  font-family: 'Karla';
+  font-family: Karla;
   font-weight: 700; 
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #333333;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+  opacity: 60%;
+  cursor: pointer;
 }
 
 .bike {

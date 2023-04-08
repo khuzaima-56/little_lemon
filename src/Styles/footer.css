@@ -2,36 +2,42 @@
 footer {
   background-color: #495E57;
   grid-column: 1/ span 12;
+  padding-inline: 10rem;
   height: 300px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
-  grid-gap: 10px;
+  padding-block: 3rem;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
   width: 100%;
+  place-items: start;
 }
 
 footer > div {
-align-self: center;
-justify-self: end;
+  align-self: start;
 }
 
-.nav_links {
+.nav_links  > li {
   list-style-type: none;
-  align-self: center;
-  justify-self: center;
-  line-height: 30px;
-  font-family: 'Karla';
-  font-size: 20px;
-  color: white;
+  line-height: 25px;
+  font-size: 1rem;
 }
 
-.contact {
-  font-family: 'Karla';
-  font-size: 20px;
-  line-height: 30px;
-  padding-right:100px ;
-  align-self: center;
-  justify-self: start;
+.nav_links > li > a {
+  text-decoration: none;
   color: white;
+  font-family: Karla;
+  transition: .2s linear;
+}
+
+.nav_links > li > a:hover {
+  color: yellow;
+}
+
+.address, .cell, .email {
+  font-family: Karla, sans-serif;
+  font-size: 1rem;
+  line-height: 30px;
+  color: white;
+  font-style: italic;
 }
 
 .copyrights {
@@ -42,4 +48,18 @@ justify-self: end;
   align-self: center;
   justify-self: start;
   color: white;
+}
+
+.sitemap {
+  color: white;
+  letter-spacing: 3px;
+  padding-bottom: 15px;
+}
+
+.social > a {
+  padding-right: 15px;
+}
+
+.icon {
+  cursor: pointer;
 }
