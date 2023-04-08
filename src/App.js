@@ -17,7 +17,7 @@ function App() {
   const location = useLocation();
   const currentPage = location.pathname.slice(1);
   const [selectedPage, setSelectedPage] = useState(
-    currentPage.length === 0 ? "home" : currentPage
+    currentPage
   );
   const handlePageChange = (page) => {
     setSelectedPage(page);
@@ -26,8 +26,9 @@ function App() {
   useEffect(() => { 
     const newPage = location.pathname.slice(1)
     setSelectedPage(
-      newPage.length===0 ? 'home' : newPage
+      newPage
     )
+    console.log('Here')
   },[location.pathname])
   return (
     <div className="container">

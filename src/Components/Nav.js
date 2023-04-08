@@ -7,8 +7,8 @@ const Nav = ({ selectedPage, onPageChange }) => {
       <ul className="navel">
         <li>
           <Link
-            className={selectedPage === "home" ? "nav-link active" : "nav-link"}
-            onClick={() => onPageChange("home")}
+            className={selectedPage === "little_lemon" ? "nav-link active" : "nav-link"}
+            onClick={() => onPageChange("little_lemon")}
             to="/little_lemon">
             Home
           </Link>
