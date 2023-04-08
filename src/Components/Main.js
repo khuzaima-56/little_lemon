@@ -36,7 +36,7 @@ function Main() {
     <main className="main">
       <Routes>
         <Route
-          path="/"
+          path="/little_lemon"
           element={<Homepage />}
           aria-label="Home Page Button"></Route>
 

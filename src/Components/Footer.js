@@ -31,7 +31,7 @@ const Footer = ({ selectedPage, onPageChange }) => {
       <ul className="nav_links">
         <h4 className="sitemap">SITEMAP</h4>
         <li>
-          <Link onClick={() => handleClick("home")} to="/">
+          <Link onClick={() => handleClick("home")} to="/little_lemon">
             Home
           </Link>
         </li>

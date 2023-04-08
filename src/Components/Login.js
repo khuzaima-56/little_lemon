@@ -14,7 +14,7 @@ const Login = () => {
 const handleSubmit = (e) => {
     e.preventDefault();
     clearForm();
-    navigate("/");
+    navigate("/little_lemon");
     window.scrollTo(0, 0);
 }
 

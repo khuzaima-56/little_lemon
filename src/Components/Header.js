@@ -7,7 +7,7 @@ function Header () {
     
     useEffect(() => {
         const handleClick = () => {
-            navigate('/')
+            navigate("/little_lemon");
         }
         document.getElementById('logo').addEventListener('click', handleClick)
 
