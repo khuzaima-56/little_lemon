@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/BookingForm.css";
+import { FaCircleNotch, FaCircle } from "react-icons/fa";
 
 const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
     
@@ -9,6 +10,7 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
     const [selectedTime, setSelectedTime] = useState(availableTimes[0]);
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("");
+    const [place, setPlace] = useState('Indoor')
 
     const today = new Date().toISOString().slice(0, 10);
 
@@ -25,6 +27,7 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
         selectedTime,
         guests,
         occasion,
+        place
       });
     }
 
@@ -50,8 +53,8 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
               id="res-time"
               name="res-time"
               value={selectedTime}
+              className="custom-select"
               onChange={(e) => setSelectedTime(e.target.value)}>
-              c
               {availableTimes === undefined
                 ? "No time available"
                 : availableTimes.map((time, index) => (
@@ -87,6 +90,28 @@ const BookingForm = ({ availableTimes, setAvailableTimes, onSubmit  }) => {
               <option value="Other">Other</option>
             </select>
           </fieldset>
+
+          <fieldset className="place">
+            <legend>Select Place</legend>
+            <label id="indoor" onClick={() => setPlace("Indoor")}>
+              {place === "Indoor" ? (
+                <FaCircle className="icon" />
+              ) : (
+                <FaCircleNotch className="icon" />
+              )}
+              &nbsp; Indoor
+            </label>
+
+            <label id="outdoor" onClick={() => setPlace("Outdoor")}>
+              {place === "Outdoor" ? (
+                <FaCircle className="icon" />
+              ) : (
+                <FaCircleNotch className="icon" />
+              )}
+              &nbsp; Outdoor
+            </label>
+          </fieldset>
+
           <input
             className="submit"
             type="submit"

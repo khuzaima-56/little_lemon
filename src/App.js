@@ -28,7 +28,6 @@ function App() {
     setSelectedPage(
       newPage
     )
-    console.log('Here')
   },[location.pathname])
   return (
     <div className="container">

@@ -15,7 +15,7 @@
     grid-row-gap: 2.3rem;
 }
 
-label {
+label, legend {
     color: #495e57;
     font-family: sans-serif;
     font-size: 0.9rem;
@@ -72,5 +72,42 @@ fieldset {
     font-weight: 500;
     padding-block: 2.3rem;
     font-size: 2rem;
+}
+ /* --Gender Container-- */
+
+ .gender-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+ }
+
+ #male {
+    justify-self: end;
+ }
+
+ #female {
+    justify-self: start;
+ }
+
+.gender {
+    background-color: rgba(178, 158, 158, 0.353);
+    font-size: 2.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+    padding-inline: 1rem;
+    border-radius: 0.9rem;
+    transition:0.3s linear;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    justify-items: start;
+}
+
+.icon {
+    color: #495E57;
+    font-size: 1.2rem;
 }
 

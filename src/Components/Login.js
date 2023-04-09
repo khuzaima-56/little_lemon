@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/BookingForm.css"
+import { FaMale, FaFemale} from "react-icons/fa";
 
 const Login = () => {
   const [fname, setFName] = useState("");
@@ -8,6 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState("");
+  const [gender, setGender] = useState('male');
 
   const navigate = useNavigate();
 
@@ -24,6 +26,12 @@ const handleSubmit = (e) => {
     setEmail('')
     setPhone('')
     setPassword('')
+    setGender('')
+  }
+
+  const style = {
+    backgroundColor : '#495e57',
+    color : '#F4CE14'
   }
 
   return (
@@ -73,7 +81,7 @@ const handleSubmit = (e) => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-       </fieldset>
+        </fieldset>
 
         <fieldset>
           <label htmlFor="password">
@@ -104,7 +112,28 @@ const handleSubmit = (e) => {
             onChange={(e) => setPhone(e.target.value)}
             required></input>
         </fieldset>
-      
+
+        <fieldset className="gender-container">
+          <label
+            id="male"
+            type='radio'
+            onClick={() => setGender("male")}
+            style={gender === "male" ? style : null}
+            className="gender">
+            <FaMale />
+          </label>
+
+          <label
+            id="female"
+            type='radio'
+            onClick={() => setGender("female")}
+            style={gender === "female" ? style : null}
+            className="gender"
+            >
+            <FaFemale />
+          </label>
+        </fieldset>
+
         <input className="submit" type="submit" value="Login" />
       </form>
     </section>

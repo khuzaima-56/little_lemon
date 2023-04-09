@@ -32,6 +32,7 @@ const ConfirmedBooking = () => {
           <p>Date : </p> <p>{formdata.date}</p>
           <p>Time :</p> <p> {formattedTime}</p>
           <p>Occasion :</p> <p>{formdata.occasion}</p>
+          <p>Place :</p> <p>{formdata.place}</p>
         </div>
         <div className="back">
           <Link className="LinkBack" to="/little_lemon" element={<Homepage />}>
