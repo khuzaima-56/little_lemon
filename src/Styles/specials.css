@@ -142,4 +142,8 @@ button {
      align-self: center;
      font-size: 0.7rem;
   }
+
+  .cardDesc {
+    padding-bottom: 8%;
+  }
 }

@@ -67,7 +67,7 @@ const Footer = ({ selectedPage, onPageChange }) => {
         <div className="address">
           <p>
             <FaMapMarkerAlt fontSize={15} />
-            &nbsp; 678 Pisa Ave, Chicago, IL 60611
+            &nbsp; 678 Pisa Ave, Chicago
           </p>
         </div>
 

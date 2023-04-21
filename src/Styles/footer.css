@@ -88,10 +88,12 @@ footer > div {
   .sitemap {
       font-size: 1.4rem;
       text-align: center;
+      font-weight: 800;
   }
 
   .social {
     text-align: center;
+    border-top: 1px solid #fbd513;
   }
 }
 

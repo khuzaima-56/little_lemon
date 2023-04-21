@@ -1,13 +1,11 @@
 .logo {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 12;
 }
 
 .navbar {
   grid-column: 7/ span 5;
   display: none;
 }
-
-
 
 .navel {
   list-style-type: none;
