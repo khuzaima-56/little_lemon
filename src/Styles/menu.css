@@ -13,3 +13,23 @@
     height: auto;
     border-radius: 2rem;
 }
+
+@media screen and (max-width: 900px) {
+    .menu {
+        width: 45vw;
+        height: auto;
+    }
+ }
+
+ @media screen and (max-width: 750px) {
+    .menuPage {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+
+    .menu {
+        width: 70vw;
+        height: auto;
+    }
+ }

@@ -3,12 +3,7 @@ import Restaurant from '../Assets/restaurant.jpg'
 
 const About = () => {
   const about =
-    "Little Lemon is a Chicago-based fast-casual eatery that specializes in fresh, healthy cuisine made from locally sourced ingredients. Their menu boasts an array of customizable grain bowls, salads, wraps, and smoothies, all designed to cater to different dietary needs and preferences. Little Lemon's focus is on providing accessible, nutritious meals to everyone, without sacrificing taste or convenience. Whether you're looking for a quick bite on the go or a satisfying meal to fuel your day, Little Lemon has got you covered with their flavorful, made-from-scratch dishes.";
-  
-  const image_styling = {
-    width: '244px',
-    height: '300px',
-  }
+    "Little Lemon is a fast-casual eatery located in Chicago, offering fresh and healthy cuisine made from locally sourced ingredients. Their menu features a variety of customizable grain bowls, salads, wraps, and smoothies, catering to diverse dietary needs and preferences. Little Lemon is committed to providing accessible, nutritious meals without compromising taste or convenience. Their flavorful, made-from-scratch dishes are perfect for anyone looking for a quick bite on the go or a satisfying meal to fuel their day. Whether you're in the mood for a refreshing smoothie or a hearty salad, Little Lemon has got you covered. Enjoy their delicious meals while supporting local farmers and the community.";
 
     return (
       <section className="about">
@@ -19,8 +14,8 @@ const About = () => {
         </div>
 
         <div className='images'>
-          <img className='im1' style={image_styling} src={ChefImage} alt="chef" />
-          <img className='im2' style={image_styling} src={Restaurant} alt="restaurant" />
+          <img className='im1'  src={ChefImage} alt="chef" />
+          <img className='im2' src={Restaurant} alt="restaurant" />
         </div>
       </section>
     );

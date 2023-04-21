@@ -1,14 +1,13 @@
 /* Footer Styling */
 footer {
   background-color: #495E57;
-  grid-column: 1/ span 12;
   padding-inline: 10rem;
-  height: 300px;
   display: grid;
   padding-block: 3rem;
   grid-template-columns: 1fr 1fr 2fr 1fr;
-  width: 100%;
   place-items: start;
+  grid-column: 1 / span 12;
+  width: 100%;
 }
 
 footer > div {
@@ -63,3 +62,36 @@ footer > div {
 .icon {
   cursor: pointer;
 }
+
+@media screen and (max-width: 1050px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    padding-inline: 4rem;
+    grid-row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+   padding-inline: 2rem
+  }
+}
+
+@media screen and (max-width: 570px) {
+  footer {
+   grid-template-columns: 1fr;
+   grid-row-gap: 40px;
+  }
+
+  .sitemap {
+      font-size: 1.4rem;
+      text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
+}
+

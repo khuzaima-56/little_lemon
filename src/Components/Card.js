@@ -16,8 +16,9 @@ const Card = (props) => {
           <h3 className="cardPrice">{data.price}</h3>
         </div>
         <p className="cardDesc">{data.description}</p>
-        <h5 className='order'>
-          Order a delivery <img className='bike'style={bikeStyle} src={Bike} alt="" />
+        <h5 className="order">
+          <span>Order a delivery</span>
+          <img className="bike" style={bikeStyle} src={Bike} alt="" />
         </h5>
       </article>
     );

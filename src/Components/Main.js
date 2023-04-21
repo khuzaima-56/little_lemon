@@ -44,7 +44,6 @@ function Main() {
           path="/about"
           element={
             <>
-              {" "}
               <Testimonials /> <About />
             </>
           }

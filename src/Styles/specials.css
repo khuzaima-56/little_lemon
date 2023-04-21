@@ -1,7 +1,12 @@
  /* Specials Section Styling */
 .special {
   padding: 50px 100px;
-  /* background-color: rgb(188, 188, 188); */
+}
+
+.specialGrid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
 }
 
 .specialsHeading {
@@ -10,26 +15,25 @@
   font-size: 2rem;
   padding-top: 10px;
   color: #495E57;
-  position: absolute;
-
 }
 
-.right {
-  position: absolute;
-  right:100px;
+button {
+  justify-self: end ;
 }
+
 
 .cards {
-  margin-top: 100px;
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
 }
 
 .card {
-  background-color: #EDEFEE;
+  background-color: #e3e9e6;
   border-radius: 16px;
-    overflow: hidden;
+  overflow: hidden;
+  position: relative;
 }
 
 .cardImg {
@@ -43,13 +47,11 @@
 .card:hover .cardImg {
   transform: scale(1.1);
 }
-/* .cardImg:hover {
-  
-} */
 
 .cardTitle {
-  font-family: 'Markazi Text';
-  font-size: 24px;
+  font-family: Karla,sans-serif;
+  color: #495e57;
+  font-size: 1.15rem;
   font-weight: bold;
 }
 
@@ -73,6 +75,7 @@
   font-size: 20px;
   line-height: 24px;
   color: #495E57;
+  margin-bottom: 30%;
 }
 
 .order {
@@ -81,13 +84,62 @@
   font-size: 1.2rem;
   color: #333333;
   padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: absolute;
+  bottom: 20px;
   opacity: 60%;
   cursor: pointer;
+}
+
+.order > span:hover{
+  text-decoration: underline;
 }
 
 .bike {
   position: relative;
   top:5px;
+}
+
+@media screen and (max-width: 1065px) { 
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+  }
+
+  .special {
+    padding-inline: 50px;
+  }
+
+}
+
+@media screen and (max-width: 610px) { 
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 1.7%;
+  }
+
+   .special {
+    padding-inline: 25px;
+  }
+
+  .cardDesc {
+    margin-bottom: 20%;
+  }
+
+  .specialsHeading {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) { 
+  .specialsHeading {
+    font-size: 1.2rem;
+    align-self: center;
+  }
+
+  .button {
+     align-self: center;
+     font-size: 0.7rem;
+  }
 }

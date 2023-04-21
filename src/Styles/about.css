@@ -1,9 +1,11 @@
 /* About Section Styling */
 
 .about {
-  padding: 80px 100px 20px 150px;
+  padding: 80px 100px 20px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+
 }
 
 .res_name {
@@ -16,36 +18,74 @@
 .loc {
   font-family: 'Markazi Text';
   font-weight: bold; 
-  font-size: 28px;
+  font-size: 32px;
   color: #333333;
   padding-bottom: 40px;
 }
 
 .about_desc {
-  font-family: 'Karla';
-  font-size: 20px;
+  color: #495e57;
+  font-family: Karla ,sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
   text-align: justify;
-  color: #000000;
 }
 
 .text {
   padding-bottom: 100px;
+  padding-top: 60px;
 }
 
 .images {
-  place-self: center;
-  padding-bottom: 70px;
-  padding-top: 30px;
+  justify-self: end;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: end;
+  align-items: center;
+  grid-row-gap: 10px;
+  /* padding-bottom: 70px;
+  padding-top: 30px; */
 }
 
-.im1 {
-  position: relative;
-  top:50px;
-  left:40px;
+.images > img {
+  border-radius: 16px;
+  width: 80%;
+  height: auto;
 }
 
-.im2 {
-position: relative;
-top:-50px;
-left:-40px;
+
+@media screen and (max-width: 900px) { 
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    padding-inline: 75px;
+  }
+
+  .text {
+    padding-bottom: 30px;
+    padding-top: 0px;
+  }
+
+  .images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .images > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  .images {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .about {
+    padding-inline: 40px;
+  }
 }

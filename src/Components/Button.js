@@ -21,9 +21,8 @@ const Button = (props) => {
     };
   });
 
-  const btn_class = props.cname === undefined ? " " : props.cname;
   return (
-    <button ref={btnRef} className={`button ${btn_class}`} id="btn">
+    <button ref={btnRef} className='button' id="btn">
       {props.title}
     </button>
   );

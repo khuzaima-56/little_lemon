@@ -1,4 +1,4 @@
-import Dish from '../Assets/restauranfood.jpg'
+import Dish from '../Assets/restauranfoodcropped1.jpg'
 import Button from './Button.js'
 import BookingPage from './BookingPage';
 

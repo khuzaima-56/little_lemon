@@ -2,10 +2,9 @@
 .testimonials {
   background-color: #495E57;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 1fr;
   padding: 100px 150px;
-  grid-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .testimonials > h1 {
@@ -15,17 +14,23 @@
   font-weight: 500;
   font-size: 36px;
   color: white;
+  text-align: center;
+}
+
+.reviewCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .testimonial {
   background-color: rgb(255, 255, 255);
   border-radius: 16px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding: 100px 20px 25px 20px;
-  grid-row-gap: 15px;
-  padding-bottom: 30px;
+  grid-template-rows: auto auto auto 1fr;
+  padding: 15px 20px;
+  grid-row-gap: 10px;
+  place-items: center;
 }
 
 .comment {
@@ -36,32 +41,50 @@
   color: #6E6F6E;
 }
 
-.h {
-  grid-column: 1/span 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px;
-}
-
-.h > div {
-  align-self: center;
-}
-
 .dp {
-  justify-self: center;
+  place-items: center;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
 }
 
 .name {
-  font-family: 'Karla';
-  font-weight: 700;
-  font-size: 20px;
-  color: #333333;
+   font-family: Karla,sans-serif;
+  color: #495e57;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.username {
-  font-family: 'Karla';
-  font-weight: 700;
-  font-size: 14px;
-  padding-top: 5px;
-  color: #6E6F6E;
+.stars {
+  color: #fbd513;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1065px) { 
+  .reviewCards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+  }
+}
+
+@media screen and (max-width: 800px) { 
+  .testimonials {
+    padding-inline: 75px;
+  }
+}
+
+@media screen and (max-width: 650px) { 
+  .reviewCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+  }
+
+  .testimonials > h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 450px) { 
+.testimonials {
+  padding-inline: 45px;
+}
 }

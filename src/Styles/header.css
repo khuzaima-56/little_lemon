@@ -4,7 +4,10 @@
 
 .navbar {
   grid-column: 7/ span 5;
+  display: none;
 }
+
+
 
 .navel {
   list-style-type: none;

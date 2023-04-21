@@ -3,6 +3,7 @@ import Card from "./Card";
 import Salad from "../Assets/salad.jpg";
 import BruchettaImg from "../Assets/bruchetta.jpg";
 import DessertImg from "../Assets/Dessert.jpg";
+import NoodlesImg from '../Assets/ricenoddles.jpg'
 
 const Specials = () => {
 
@@ -30,14 +31,25 @@ const Specials = () => {
       "Every ingredient in this recipe, sourced straight from grandma's book, is authentic and true to its origin.",
   };
 
+  const Noodles = {
+    img: NoodlesImg,
+    title: "Rice Noddles",
+    price: "$7.00",
+    description:
+      "Rice noodles offer a light, gluten-free alternative to pasta and are versatile for various dishes.",
+  };
+
   return (
     <section className="special">
-      <h1 className="specialsHeading">This weeks specials!</h1>
-      <Button cname="right" title="Online Menu" to=''/>
+      <div className="specialGrid">
+        <h1 className="specialsHeading">This weeks specials!</h1>
+        <Button title="Online Menu" to=''/>
+      </div>
       <section className="cards">
         <Card data={Greek_Salad} />
         <Card data={Bruchetta} />
         <Card data={Dessert} />
+        <Card data={Noodles} />
       </section>
     </section>
   );

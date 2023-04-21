@@ -29,6 +29,7 @@ function App() {
       newPage
     )
   },[location.pathname])
+
   return (
     <div className="container">
       <Header />

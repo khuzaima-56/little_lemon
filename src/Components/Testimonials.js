@@ -6,9 +6,11 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <h1>What people say about us!</h1>
-      {data.map((user) => {
-        return <Testimonail key={user.Username} userdata={user} />;
-      })}
+      <section className='reviewCards'>
+        {data.map((user) => {
+          return <Testimonail key={user.Name} userdata={user} />;
+        })}
+      </section>
     </section>
   );
 };
