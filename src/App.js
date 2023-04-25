@@ -2,6 +2,7 @@ import Header from "./Components/Header";
 import Nav from "./Components/Nav";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
+import Hamburger from "./Components/Hamburger";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -15,7 +16,7 @@ import "./Styles/footer.css"
 
 function App() {
   const location = useLocation();
-  const currentPage = location.pathname.slice(1);
+  const currentPage = location.pathname.slice(1)
   const [selectedPage, setSelectedPage] = useState(
     currentPage
   );
@@ -34,6 +35,7 @@ function App() {
     <div className="container">
       <Header />
       <Nav selectedPage={selectedPage} onPageChange={handlePageChange} />
+      <Hamburger selectedPage={selectedPage} onPageChange={handlePageChange} />
       <Main />
       <Footer selectedPage={selectedPage} onPageChange={handlePageChange} />
     </div>

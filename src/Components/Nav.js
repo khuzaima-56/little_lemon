@@ -7,7 +7,13 @@ const Nav = ({ selectedPage, onPageChange }) => {
       <ul className="navel">
         <li>
           <Link
-            className={selectedPage === "little_lemon" ? "nav-link active" : "nav-link"}
+            className={
+              selectedPage === "little_lemon" ||
+              selectedPage === "little_lemon/" ||
+              selectedPage === ""
+                ? "nav-link active"
+                : "nav-link"
+            }
             onClick={() => onPageChange("little_lemon")}
             to="/little_lemon">
             Home
@@ -18,7 +24,9 @@ const Nav = ({ selectedPage, onPageChange }) => {
           <Link
             to="/about"
             className={
-              selectedPage === "about" ? "nav-link active" : "nav-link"
+              selectedPage === "about" || selectedPage === "about/"
+                ? "nav-link active"
+                : "nav-link"
             }
             onClick={() => onPageChange("about")}>
             About
@@ -29,10 +37,11 @@ const Nav = ({ selectedPage, onPageChange }) => {
           <Link
             to="/booking"
             className={
-              selectedPage === "booking" ? "nav-link active" : "nav-link"
+              selectedPage === "booking" || selectedPage === "booking/"
+                ? "nav-link active"
+                : "nav-link"
             }
-            onClick={() => onPageChange("booking")}
-            >
+            onClick={() => onPageChange("booking")}>
             Reservations
           </Link>
         </li>
@@ -41,7 +50,9 @@ const Nav = ({ selectedPage, onPageChange }) => {
           <Link
             to="/order"
             className={
-              selectedPage === "order" ? "nav-link active" : "nav-link"
+              selectedPage === "order" || selectedPage === "order/"
+                ? "nav-link active"
+                : "nav-link"
             }
             onClick={() => onPageChange("order")}>
             Order
@@ -51,7 +62,11 @@ const Nav = ({ selectedPage, onPageChange }) => {
         <li>
           <Link
             to="/menu"
-            className={selectedPage === "menu" ? "nav-link active" : "nav-link"}
+            className={
+              selectedPage === "menu" || selectedPage === "menu/"
+                ? "nav-link active"
+                : "nav-link"
+            }
             onClick={() => onPageChange("menu")}>
             Menu
           </Link>
@@ -60,7 +75,11 @@ const Nav = ({ selectedPage, onPageChange }) => {
         <li>
           <Link
             to="/login"
-            className={selectedPage === "login" ? "nav-link active" : "nav-link"}
+            className={
+              selectedPage === "login" || selectedPage === "login/"
+                ? "nav-link active"
+                : "nav-link"
+            }
             onClick={() => onPageChange("login")}>
             Login
           </Link>

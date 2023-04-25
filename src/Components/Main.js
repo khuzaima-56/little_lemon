@@ -39,6 +39,11 @@ function Main() {
           path="/little_lemon"
           element={<Homepage />}
           aria-label="Home Page Button"></Route>
+       
+        <Route
+          path="/"
+          element={<Homepage />}
+          aria-label="Home Page Button"></Route>
 
         <Route
           path="/about"
