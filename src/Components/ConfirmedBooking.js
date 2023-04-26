@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import "../Styles/confirmation.css"
-import { Link } from "react-router-dom";
-import Homepage from "./Homepage";
+import Home from "./Homepage"
+import Button from "./Button";
 import { FaCheckCircle } from "react-icons/fa";
 
 const ConfirmedBooking = () => {
@@ -35,9 +35,12 @@ const ConfirmedBooking = () => {
           <p>Place :</p> <p>{formdata.place}</p>
         </div>
         <div className="back">
-          <Link className="LinkBack" to="/little_lemon" element={<Homepage />}>
-            Back to Home
-          </Link>
+          <Button
+          className='backtohome'
+            title="Back to Home"
+            to="/"
+            element={<Home />}
+          />
         </div>
       </section>
     );

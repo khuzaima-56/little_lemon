@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 900px) {
   .hero {
-    padding-inline: 75px;
+    padding-inline: 70px;
   }
 }
 
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 600px) { 
   .hero {
-    padding-inline: 40px;
+    padding-inline: 30px;
   }
 }
 

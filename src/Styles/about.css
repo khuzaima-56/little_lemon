@@ -20,7 +20,7 @@
   font-weight: bold; 
   font-size: 32px;
   color: #333333;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .about_desc {
@@ -59,7 +59,7 @@
   .about {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    padding-inline: 75px;
+    padding-inline: 70px;
   }
 
   .text {
@@ -86,7 +86,7 @@
   }
 
   .about {
-    padding-inline: 40px;
+    padding-inline: 30px;
   }
 }
 

@@ -2,7 +2,7 @@
 .confirmDesc {
     margin-block: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr  1fr;
     grid-row-gap: 10px;
 }
@@ -11,7 +11,7 @@
     background-color: #a9beb8;
     color: black;
     padding-block: 15px;
-    padding-left: 30%;
+    padding-inline: 14%;
     font-size: 1.2rem;
     font-family: 'Karla';
 }
@@ -27,7 +27,11 @@
     margin-bottom: 50px;
 }
 
-.LinkBack {
+.back > button {
+     justify-self: center;
+}
+
+/* .LinkBack {
     text-decoration: none;
     font-family: 'Karla';
     font-size: 1.3rem;
@@ -40,4 +44,16 @@
 
 .LinkBack:hover {
     background-color: #fbd513;
+} */
+
+@media screen and (max-width: 900px) {
+    .confirmDesc > p  {
+        padding-inline: 75px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .confirmDesc > p  {
+        padding-inline: 40px;
+    }
 }
