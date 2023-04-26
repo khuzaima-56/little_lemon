@@ -92,6 +92,8 @@ const handleSubmit = (e) => {
             id="password"
             name="password"
             placeholder="Enter your password"
+            minLength="8"
+            maxLength="24"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -107,7 +109,7 @@ const handleSubmit = (e) => {
             id="phone"
             name="phone"
             placeholder="123-456-7890"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required></input>
@@ -116,7 +118,7 @@ const handleSubmit = (e) => {
         <fieldset className="gender-container">
           <label
             id="male"
-            type='radio'
+            type="radio"
             onClick={() => setGender("male")}
             style={gender === "male" ? style : null}
             className="gender">
@@ -125,11 +127,10 @@ const handleSubmit = (e) => {
 
           <label
             id="female"
-            type='radio'
+            type="radio"
             onClick={() => setGender("female")}
             style={gender === "female" ? style : null}
-            className="gender"
-            >
+            className="gender">
             <FaFemale />
           </label>
         </fieldset>
