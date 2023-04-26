@@ -1,7 +1,7 @@
 /* About Section Styling */
 
 .about {
-  padding: 80px 100px 20px 100px;
+  padding: 80px 7% 20px 7%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 50px;
@@ -28,7 +28,7 @@
   font-family: Karla ,sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  text-align: justify;
+  word-wrap: break-word;
 }
 
 .text {
@@ -87,5 +87,19 @@
 
   .about {
     padding-inline: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .res_name {
+    font-size: 32px;
+  }
+
+  .loc {
+    font-size: 24px;
+  }
+
+  .about_desc {
+    font-size: 15px;
   }
 }
