@@ -25,7 +25,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
 }
 
 .slide.show {
@@ -36,35 +36,28 @@
 .slide > ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,auto);
+    grid-template-rows: repeat(6,1fr);
     list-style-type: none;
     grid-gap: 0px;
 }
 
 .slide > ul > .menu-link {
     padding-left: 20px;
-    padding-block: 28.6px;
+    padding-block: 18.6px;
     color: #495e57;
-  text-transform: uppercase ;
-  transition: 0.2s linear;
-  text-decoration: none;
-  font-family: Karla;
-  font-size: 0.9rem;
-  font-weight: 700;
+    text-transform: uppercase ;
+    transition: 0.2s linear;
+    text-decoration: none;
+    font-family: Karla;
+    font-size: 0.9rem;
+    font-weight: 700;
     width: 40vw;
+    display: grid;
+    align-items: center;
 }
 
 .slide > ul > .menu-link:hover {
     background-color: #fbe05a;
-}
-
-.menu-link {
-  color: #495e57;
-  text-transform: uppercase ;
-  text-decoration: none;
-  font-family: Karla;
-  font-size: 0.9rem;
-  font-weight: 700;
 }
 
 .open {
@@ -79,21 +72,21 @@
 
 @media screen and (max-width:700px) {
     .slide {
-        width: 45vw;
+        width: 50vw;
     }
 
     .slide > ul > .menu-link {
-        width: 45vw;
+        width: 50vw;
     }
 }
 
 @media screen and (max-width:500px) {
     .slide {
-        width: 50vw;
+        width: 60vw;
     }
 
     .slide > ul > .menu-link {
-        width: 50vw;
+        width: 60vw;
     }
 }
 
@@ -104,5 +97,15 @@
 
     .slide > ul > .menu-link {
         width: 60vw;
+    }
+}
+
+@media screen and (max-width:200px) {
+    .slide {
+        width: 80vw;
+    }
+
+    .slide > ul > .menu-link {
+        width: 80vw;
     }
 }

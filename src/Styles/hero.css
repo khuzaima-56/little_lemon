@@ -8,7 +8,7 @@
   }
 
   .title {
-    font-family: 'Markazi Text';
+    font-family: Karla;
     font-size: 3.5rem;
     font-weight:500;
     color: #fbd513;
@@ -28,7 +28,7 @@
     padding-bottom: 30px;
     font-family: 'Karla';
     word-spacing: 3px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 130%;
     color: #FFFFFF;
 
@@ -81,6 +81,7 @@
 
   .description {
     padding-right: 0%;
+    font-size: 1.2rem;
   }
 
   .dish {
@@ -103,6 +104,6 @@
   }
 
   .description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
